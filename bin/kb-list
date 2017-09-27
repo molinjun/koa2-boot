@@ -7,6 +7,7 @@ const url = 'https://gitlab.com/api/v4/groups/2015437';
 request({ url, json: true }, (err, res, body) => {
   if (err) console.log(err);
 
+  console.log();
   console.log('  Available koa2 templates:');
   console.log();
 
@@ -17,4 +18,5 @@ request({ url, json: true }, (err, res, body) => {
     console.log(msg);
   };
   projects.forEach(listItem);
+  console.log();
 });
