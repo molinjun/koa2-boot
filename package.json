@@ -1,0 +1,28 @@
+{
+  "name": "koa2-boot",
+  "version": "0.0.1",
+  "description": "A tool to generate koa2 scaffold",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gedennis/koa2-boot.git"
+  },
+  "bin": {
+    "kb": "bin/boot",
+    "kb-new": "bin/kb-new",
+    "kb-list": "bin/kb-list"
+  },
+  "keywords": [
+    "koa2",
+    "scaffold",
+    "node"
+  ],
+  "author": "Dennis.ge",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gedennis/koa2-boot/issues"
+  },
+  "homepage": "https://github.com/gedennis/koa2-boot#readme",
+  "dependencies": {
+    "commander": "^2.11.0"
+  }
+}
