@@ -23,6 +23,8 @@
   },
   "homepage": "https://github.com/gedennis/koa2-boot#readme",
   "dependencies": {
-    "commander": "^2.11.0"
+    "chalk": "^2.1.0",
+    "commander": "^2.11.0",
+    "request": "^2.83.0"
   }
 }

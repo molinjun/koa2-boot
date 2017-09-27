@@ -1,0 +1,20 @@
+#!/usr/bin/env node
+/* eslint-disable no-console  */
+const request = require('request');
+const chalk = require('chalk');
+
+const url = 'https://gitlab.com/api/v4/groups/2015437';
+request({ url, json: true }, (err, res, body) => {
+  if (err) console.log(err);
+
+  console.log('  Available koa2 templates:');
+  console.log();
+
+  const projects = body.projects;
+
+  const listItem = (repo) => {
+    const msg = `  ${chalk.green('★')}  ${chalk.blue(repo.name)} - ${repo.description}`;
+    console.log(msg);
+  };
+  projects.forEach(listItem);
+});
