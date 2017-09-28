@@ -1,0 +1,29 @@
+#!/usr/bin/env node
+/* eslint-disable no-console  */
+const download = require('download-git-repo');
+const program = require('commander');
+const ora = require('ora');
+
+program
+  .usage('<template-name> [project-name]')
+  .parse(process.argv);
+
+const template = program.args[0];
+const dir = program.args[1];
+
+const clone = false;
+const temp = `gitlab:koa2-templates/${template}`;
+function downloadAndGenerate(templateUrl) {
+  const spinner = ora('downloading template');
+  spinner.start();
+
+  download(templateUrl, dir, { clone }, (err) => {
+    spinner.stop();
+    if (err) return console.error(`Failed to download repo ${template} : ${err.message.trim()}`);
+    console.log('Generated done');
+    console.log();
+    return true;
+  });
+}
+
+downloadAndGenerate(temp);
