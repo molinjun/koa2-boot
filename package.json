@@ -1,6 +1,6 @@
 {
   "name": "koa2-boot",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A tool to generate koa2 scaffold",
   "repository": {
     "type": "git",
