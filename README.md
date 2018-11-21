@@ -1,4 +1,7 @@
 ## koa2-boot
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/gedennis/koa2-boot.svg)](https://greenkeeper.io/)
+
 ```koa2-boot``` is a tool to generate a scaffold of koa2 project.
 
 ## install
